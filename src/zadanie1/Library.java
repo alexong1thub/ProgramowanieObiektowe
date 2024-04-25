@@ -36,7 +36,17 @@ public class Library {
         books.add(new Book(title, author, pages, releaseYear, genre));
         System.out.println("Książka dodana do naszej biblioteczki!");
     }
-
+    public Book searchByAuthorName(String author){
+        System.out.println("Szukam książki autorstwa: " + author);
+        for(Book b: books){
+            if(b.getAuthor().equals(author)){
+                System.out.println("Znaleziono książke tego autora.");
+                return b;
+            }
+        }
+        System.out.println("Nie znaleziono książki autora, zwracam pustą książkę.");
+        return new Book();
+    }
     public void showBooksInLibrary(){
         for(Book b: books){
             System.out.println("Tytuł książki: " + b.getTitle());
