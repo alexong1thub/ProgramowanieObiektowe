@@ -13,6 +13,7 @@ public class Main {
         tiger.run(10);
         lion.run(10);
         cheetah.run(40);
+        cheetah.run();
     }
 
 }
