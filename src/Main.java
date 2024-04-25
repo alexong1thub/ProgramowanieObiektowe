@@ -1,6 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-        int counter = 0;
 
         Animal lion = new Animal("lion", 2);
         var tiger = new Animal("tiger", 12);
