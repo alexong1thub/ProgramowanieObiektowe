@@ -1,0 +1,4 @@
+1. Klasa:
+	- cechy, (pola)
+	- zachowania (metody)
+	- konstruktory
