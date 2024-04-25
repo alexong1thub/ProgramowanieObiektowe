@@ -7,6 +7,10 @@ public class Animal {
         this.age = a;
     }
 
+    public Animal(String n){
+        this.name = n;
+    }
+
     public void eat() {
         System.out.println(name + " je posiłek, om om");
     }
