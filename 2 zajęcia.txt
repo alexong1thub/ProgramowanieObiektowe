@@ -1,0 +1,7 @@
+public - wszedzie
+private - tylko ta sama klasa
+protected - tylko w pakiecie i dziedziconej klasie w innym pakiecie
+package-private - tylko w pakiecie
+
+block-scope dostępność
+dziedziczenie - oszczędza żmudnego pisania

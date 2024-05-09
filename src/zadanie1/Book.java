@@ -18,7 +18,7 @@ public class Book {
     }
 
     public Book(String title, String author, int pages, int releaseYear, String genre) {
-        this.title = title;
+            this.title = title;
         this.author = author;
         this.pages = pages;
         this.releaseYear = releaseYear;
