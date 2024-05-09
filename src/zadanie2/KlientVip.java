@@ -8,8 +8,14 @@ public class KlientVip extends Klient{
     }
 
     public void ustawUpustProcentowy(double percent){
-        this.upustProcentowy = percent;
-        System.out.println("Zmieniono upust cenowy klienta.");
+        if(percent < 0){
+            System.out.println("Procenty upustu powinny miescic sie w przedziale dodatnich liczb i 0 \n" +
+                    "Upust pozostał bez zmian.");
+        }else{
+            this.upustProcentowy = percent;
+            System.out.println("Zmieniono upust cenowy klienta na: " + this.upustProcentowy);
+        }
+
     }
 
     @Override

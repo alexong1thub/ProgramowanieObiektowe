@@ -22,7 +22,14 @@ public class Klient {
     }
 
     public void dodajPunktyLojalnosciowe(int nowePunktyLojal){
-        this.punktyLojalnosciowe += nowePunktyLojal;
+        if(nowePunktyLojal >=0){
+            this.punktyLojalnosciowe += nowePunktyLojal;
+            System.out.println("Nowa ilość punktów lojalnościowych to: " + this.punktyLojalnosciowe);
+        }
+        else{
+            System.out.println("Liczba punktow do dodania nie moze byc ujemna!\n Liczba punktów wynosi: " + this.punktyLojalnosciowe);
+        }
+
     }
 
     public String pobierzDaneKlienta(){
