@@ -18,5 +18,10 @@ public class Player extends TeamMember{
         this.discipline = discipline;
     }
 
-
+    public void interviewAfterWin(TeamMember[] teamMembers){
+        System.out.println("It's really to great be here. Thanks for all support. This win wouldn't me without my awesome team: ");
+        for(TeamMember teamMember : teamMembers){
+            System.out.println(teamMember.getName() + " " + teamMember.getSurname());
+        }
+    }
 }

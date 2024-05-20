@@ -24,4 +24,8 @@ public class SupportStaff extends TeamMember{
         this.role = role;
     }
 
+    public void pepTalk(Player player){
+        System.out.println("You can do this! Who are you? YOU ARE WINNER. KEEP YOUR HEAD ON THE PRIZE! GET THEM: " + player.getName());
+    }
+
 }
