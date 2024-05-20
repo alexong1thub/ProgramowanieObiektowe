@@ -27,12 +27,12 @@ public class Klient {
             System.out.println("Nowa ilość punktów lojalnościowych to: " + this.punktyLojalnosciowe);
         }
         else{
-            System.out.println("Liczba punktow do dodania nie moze byc ujemna!\n Liczba punktów wynosi: " + this.punktyLojalnosciowe);
+            System.out.println("Liczba punktów do dodania nie może byc ujemna!\n Liczba punktów wynosi: " + this.punktyLojalnosciowe);
         }
 
     }
 
     public String pobierzDaneKlienta(){
-        return "Klient nazywa sie: " + this.imie + " " + this.nazwisko + " jego nr klienta to: " + this.nrKlienta + " ma on: " + this.punktyLojalnosciowe + " punktow lojalnosciowych";
+        return "Klient nazywa się: " + this.imie + " " + this.nazwisko + " jego nr klienta to: " + this.nrKlienta + " ma on: " + this.punktyLojalnosciowe + " punktów lojalnościowych";
     }
 }

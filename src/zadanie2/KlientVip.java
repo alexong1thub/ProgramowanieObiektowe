@@ -9,7 +9,7 @@ public class KlientVip extends Klient{
 
     public void ustawUpustProcentowy(double percent){
         if(percent < 0){
-            System.out.println("Procenty upustu powinny miescic sie w przedziale dodatnich liczb i 0 \n" +
+            System.out.println("Procenty upustu powinny miescic sie w przedziale większym od 0 \n" +
                     "Upust pozostał bez zmian.");
         }else{
             this.upustProcentowy = percent;

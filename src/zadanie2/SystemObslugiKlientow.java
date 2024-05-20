@@ -17,5 +17,6 @@ public class SystemObslugiKlientow {
         System.out.println(chuck.pobierzDaneKlienta());
         chuck.ustawUpustProcentowy(100);
         chuck.ustawUpustProcentowy(-100);
+        chuck.ustawUpustProcentowy(0);
     }
 }
