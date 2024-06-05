@@ -1,0 +1,5 @@
+Stwórz system zarządzania pojazdami, który umożliwia dodawanie, usuwanie, porównywanie
+i wyświetlanie informacji o różnych typach pojazdów,
+bazując na informacjach z dzisiejszych zajęć.
+Każdy pojazd powinien mieć 5 różnych pól, w tym typ paliwa (reprezentowany jako enum)
+oraz unikalny identyfikator. System powinien wspierać dziedziczenie poprzez 3 różne typy pojazdów.
