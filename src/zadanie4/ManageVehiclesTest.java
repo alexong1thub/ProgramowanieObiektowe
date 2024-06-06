@@ -13,6 +13,7 @@ public class ManageVehiclesTest {
     public static void main(String[] args) {
         ManageVehicles mV = new ManageVehicles();
         mV.addVehicle(new Car(1570, 2010, "Blue", "Audi", 5));
+        mV.addVehicle(new Car(1570, 2010, "Blue", "Audi", 5));
         mV.addVehicle(new ElectricCar(1570, 2010, "Blue", "Audi", 5));
         mV.addVehicle(new Bike(10, 2022, "Blue", "Kross"));
         mV.addVehicle(new Motorcycle(550, 2022, "Blue", "Yamaha"));
