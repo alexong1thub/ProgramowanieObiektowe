@@ -2,11 +2,11 @@ package zadanie5;
 
 public class FullTimeEmployee extends Employee {
 
-    private static int fullTimeEmployeesCounter = 0;
+    private static int fullTimeEmployeeCounter = 0;
+    private int fullTimeEmployeeId = 0;
     private double monthlySalary;
     private double daysWorked;
 
-    private int fullTimeEmployeeId = 0;
 
     public FullTimeEmployee(String n, double mS, double dW) {
         generateEmployeeId();
@@ -16,22 +16,28 @@ public class FullTimeEmployee extends Employee {
         this.daysWorked = dW;
     }
 
-    public void generateId(){
-        fullTimeEmployeeId = ++fullTimeEmployeesCounter;
+    public void generateId() {
+        fullTimeEmployeeId = ++fullTimeEmployeeCounter;
+
     }
 
     @Override
     public void generateEmployeeId() {
-        employeeId = ++employeeIdCounter;
-    }
-    @Override
-    public int getId(){
-        return fullTimeEmployeeId;
+        employeeId = ++employeeCounter;
     }
 
     @Override
-    public void backId(){
-        employeeId--;
+    public int getId() {
+        return employeeId;
+    }
+
+    @Override
+    public void backId() {
+        if(fullTimeEmployeeId>1){
+            fullTimeEmployeeId--;
+            employeeId--;
+        }
+
     }
 
     @Override
@@ -41,7 +47,7 @@ public class FullTimeEmployee extends Employee {
 
     @Override
     public void info() {
-        System.out.println(name + " is earning: " + monthlySalary + "$, fullTimeEmployeeId=" +getId() + " employeeId=" + employeeId);
+        System.out.println(name + " is earning: " + monthlySalary + "$, fullTimeEmployeeId=" + fullTimeEmployeeId + " employeeId=" + employeeId);
     }
 
     public double getMonthlySalary() {

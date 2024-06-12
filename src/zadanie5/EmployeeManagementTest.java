@@ -1,7 +1,5 @@
 package zadanie5;
 
-import java.util.ArrayList;
-
 public class EmployeeManagementTest {
     public static void main(String[] args) {
         EmployeeManagement empMan = new EmployeeManagement();
@@ -11,13 +9,14 @@ public class EmployeeManagementTest {
         empMan.addEmployee(false, "Hipster Johnes", 27, 54);
 
         empMan.showEmployees();
+        empMan.editEmployee(2, 4321, 20);
+        System.out.println("After editing id=2");
 
-        empMan.removeEmployee(1);
-        System.out.println("After removing id=1");
         empMan.showEmployees();
-        empMan.removeEmployee(1);
-        System.out.println("After removing id=1 again");
+        empMan.removeEmployeev1(2);
         empMan.showEmployees();
 
+        empMan.addEmployee(false, "Hipster Johnes 2", 27, 54);
+        empMan.showEmployees();
     }
 }
